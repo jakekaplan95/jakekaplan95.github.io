@@ -7,18 +7,24 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script defer src="./pokemon.js"></script>
     <title>Pokedex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+
 </head>
+
+
 <body>
-
-
-    <h1>Pokedex</h1>
-
+    <div class= backimg></div>
+    <h1 style= "font-family:Permanent Marker; font-size: 70px; text-align:center;">Pokedex</h1>
 
         <input type= "text" placeholder= "Pokemon ID#" id= "userInput"/>
         <input type= "submit" placeholder= "Generate" id= "submit"/>
 
 
-    <main>
+    <main style= "font-family: Archivo Black">
         <p id= "name">Name: </p>
         <p id= "identifier">ID: </p>
         <p id= "type">Type:</p>

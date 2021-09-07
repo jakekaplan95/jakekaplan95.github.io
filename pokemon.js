@@ -42,13 +42,13 @@ function displayData() {
 let generate = $("#submit");
 generate.on("click", function(event) {
 
-  var inputVal = $("#userInput").value
-  
+  var inputVal = $("#userInput").val()
   // alert if there is no user input
-  if(inputVal === undefined){
+  if(inputVal === ''){
     alert("You must submit a Pokemon name or ID, please try again")
     return
   }
+
 
 
   // Attemp to link code through Ajax for a single pokemon
