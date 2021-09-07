@@ -39,23 +39,23 @@ function displayData() {
 };
 
   // Creating a listener for the button to catch pokemon by ID
-let generate = document.getElementById("submit");
-console.log(generate);
-generate.addEventListener("click", function(event) {
+let generate = $("#submit");
+generate.on("click", function(event) {
 
-  var inputVal = document.getElementById("userInput").value
-
+  var inputVal = $("#userInput").value
 
   // Attemp to link code through Ajax for a single pokemon
-  $.ajax({
-    url: 'https://pokeapi.co/api/v2/pokemon/' + inputVal
-  }).then(
-  function(data){
-    pokemonData = data;
-    console.log(pokemonData)
-    displayData()
+$.ajax({
+  url: 'https://pokeapi.co/api/v2/pokemon/' + inputVal
+    }).then(
+function(data){
+  pokemonData = data;
+  displayData()
+  },
+
+  // Attempting to check and alert if input does not have a result
+  function(error){
+    console.log("There is no Pokemon found", error)
+    alert("There is no Pokemon found, please try again")
   });
-
-
-
 });
