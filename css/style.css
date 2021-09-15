@@ -1,0 +1,14 @@
+h1 {
+    font-family:Permanent Marker;
+    font-size: 70px;
+    text-align:center;
+}
+
+main {
+    font-family: Archivo Black
+}
+
+body {
+    background-image: url("../img/pokeball.jpeg");
+    background-color: #cccccc;
+   }
